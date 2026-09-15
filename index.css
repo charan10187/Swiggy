@@ -5,21 +5,24 @@
     padding: 0%;
     border: 0%;
 }
-#top{
-    background-color: hsl(18, 100%, 54%);
+#header{
+    background-color: hsl(18, 95%, 50%);
     height: 600px;
     width: 100%;
 }
 
 #logo{
-    height: 30px;
-    width: 100px;
-    margin-top: 20PX;
+    height: 55px;
+    width: 160px;
+    margin-top: 30PX;
+    margin-left: 150PX;
 }
 
 #container{
-    margin-top: 25px;
-    margin-right: 25px;
+    margin-top: 40px;
+    margin-right: 180px;
+    font-size: larger;
+    font-weight: bold;
     float: right;
     color: white;
     display: flex;
@@ -30,22 +33,26 @@
 #Sign{
     color: white;
     background-color: black;
-    height: 30px;
-    width: 70px;
+    font-weight: bolder;
+    font-size: medium;
+    height: 55px;
+    width: 130px;
     border-radius: 10px;
 }
 #App{
     color: white;
     background-color: transparent;
+    font-weight: bolder;
+    font-size: small;    
     border-color: white;
-    height: 30px;
-    width: 100px;
+    border-collapse: collapse;
+    height: 50px;
+    width: 140px;
     border-radius: 10px;
 }
 
 #veggies{
-    height: 500px;
-    width: 200px;
+    width: 150px;
     margin-top: 100px;
     margin-left: 0px;
     float: left;
@@ -63,10 +70,10 @@ h1{
 
 #menu{
     background-color: white;
-    height: 500px;
+    height: 600px;
 }
 #footer{
     background-color: lightgray;
-    height: 600px;
+    height: 200px;
     width: 100%;
 }
