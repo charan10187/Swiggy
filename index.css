@@ -1,0 +1,42 @@
+
+body{
+    background-color: hsl(18, 100%, 54%);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+img{
+    height: 50px;
+    width: 100px;
+    margin-left: 50PX;
+    margin-top: 20PX;
+}
+
+#container{
+    margin-top: 40px;
+    margin-right: 25px;
+    float: right;
+    color: white;
+    display: flex;
+    
+
+}
+#Sign{
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+}
+#App{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
