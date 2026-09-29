@@ -1,4 +1,4 @@
-/* https://chatgpt.com/share/6aa90134-b34c-83ea-87c9-88370b1a2336 */
+
 /* SWIGGY */
 
 * {
@@ -21,7 +21,7 @@
 /* ================= TOP SECTION ================= */
 
 #header-top {
-    margin-top: 40px;
+    padding-top:40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,10 +40,11 @@
 /* ================= NAVIGATION ================= */
 #container {
     display: flex;
-    align-items:center;
-    gap: 15px;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
     color: white;
-    font-size: larger;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -104,11 +105,33 @@ h1 {
 
 /* ================= SEARCH BOXES ================= */
 
-#search-box{
-      display: flex;
-      height: 40px;
-      width: 200px;
-      gap: 10px;
+#search-container {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    gap: 15px;
+    width: 700px;
+}
+
+#location-input,
+#search-input {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+#location-input {
+    width: 280px;
+}
+
+#search-input {
+    width: 405px;
 }
 
 
@@ -139,20 +162,29 @@ h1 {
 /* ================= FOOTER ================= */
 #footer {
     background-color: rgb(236, 236, 236);
-    height: 30vh;
-    width: 100vw;
-} 
+    min-height: 30vh;
+    width: 100%;
+    padding: 50px;
+}
+
+#footer table {
+    width: 100%;
+    border-spacing: 40px 0;
+}
+
+#footer th {
+    text-align: left;
+    vertical-align: top;
+    color: #444;
+}
 
 #footerlogo {
-    /* margin: 20px 0px 0px 50px; */
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
 }
 
-h6 {
-    /* float: left; */
-    /* color: rgb(99, 98, 98);    */
-    /* margin: 0px 0px 0px 50px ; */
-}
-
-table{
-    gap: 20px;
+#footer h6 {
+    color: #666;
+    font-size: 13px;
 }
