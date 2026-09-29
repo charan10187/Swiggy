@@ -1,703 +1,56 @@
-/* =====================================================
-GLOBAL
-===================================================== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
-html {
-/* scroll-behavior: smooth; */
-}
-
-body {
-font-family: Arial, Helvetica, sans-serif;
-/* color: #222; */
-/* overflow-x: hidden; */
-}
-
-button,
-input {
-font-family: inherit;
-}
-
-/* =====================================================
-HEADER
-===================================================== */
-
-#header {
-position: relative;
-width: 100%;
-min-height: 720px;
-background: linear-gradient(
-135deg,
-#ff5200,
-#ff5a00
-);
-overflow: hidden;
-}
-
-/* =====================================================
-NAVIGATION
-===================================================== */
-
-#header-top {
-width: 100%;
-padding: 28px 5%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-position: relative;
-z-index: 10;
-}
-
-.logo-link {
-display: block;
-}
-
-#logo {
-width: 160px;
-height: auto;
-display: block;
-}
-
-/* NAVIGATION ITEMS */
-
-#nav-container {
-display: flex;
-align-items: center;
-gap: 28px;
-color: white;
-font-size: 16px;
-font-weight: 600;
-}
-
-#nav-container span {
-white-space: nowrap;
-}
-
-/* APP BUTTON */
-
-#app-button {
-height: 50px;
-padding: 0 22px;
-border: 1px solid white;
-border-radius: 10px;
-
-background: transparent;
-color: white;
-
-font-size: 15px;
-font-weight: 600;
-
-cursor: pointer;
-
-transition: 0.2s;
-
-
-}
-
-#app-button:hover {
-background: white;
-color: #ff5200;
-}
-
-/* SIGN IN BUTTON */
-
-#sign-button {
-height: 50px;
-padding: 0 25px;
-
-border: none;
-border-radius: 10px;
-
-background: #000;
-color: white;
-
-font-size: 15px;
-font-weight: 600;
-
-cursor: pointer;
-
-transition: 0.2s;
-
-
-}
-
-#sign-button:hover {
-background: #222;
-}
-
-/* =====================================================
-DECORATIVE IMAGES
-===================================================== */
-
-#veggies,
-#sushi {
-position: absolute;
-width: 180px;
-height: auto;
-
-top: 180px;
-
-z-index: 1;
-
-}
-
-#veggies {
-left: 0;
-}
-
-#sushi {
-right: 0;
-}
-
-/* =====================================================
-HERO CONTENT
-===================================================== */
-
-#hero-content {
-position: relative;
-z-index: 5;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-padding-top: 90px;
-}
-
-/* HEADING */
-
-#hero-content h1 {
-width: min(750px, 90%);
-
-color: white;
-text-align: center;
-
-font-size: 40px;
-line-height: 1.25;
-font-weight: 700;
-
-
-}
-
-/* =====================================================
-SEARCH
-===================================================== */
-
-#search-container {
-margin-top: 35px;
-
-
-display: flex;
-justify-content: center;
-gap: 12px;
-
-width: min(800px, 90%);
-
-}
-
-/* SEARCH BOX */
-
-.search-box {
-height: 58px;
-
-
-display: flex;
-align-items: center;
-
-background: white;
-border-radius: 10px;
-
-padding: 0 16px;
-
-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
-
-}
-
-.search-box:first-child {
-width: 300px;
-}
-
-.search-box:last-child {
-flex: 1;
-}
-
-.search-icon {
-margin-right: 10px;
-font-size: 18px;
-}
-
-.search-box input {
-width: 100%;
-height: 100%;
-
-border: none;
-outline: none;
-
-font-size: 15px;
-color: #333;
-
-}
-
-.search-box input::placeholder {
-color: #777;
-}
-
-/* =====================================================
-SERVICE CARDS
-===================================================== */
-
-#service-cards {
-position: relative;
-z-index: 5;
-
-display: flex;
-justify-content: center;
-align-items: flex-end;
-
-gap: 20px;
-
-margin-top: 80px;
-
-
-}
-
-.service-card {
-display: block;
-transition: transform 0.25s ease;
-
-}
-
-.service-card:hover {
-transform: translateY(-8px);
-}
-
-.service-card img {
-display: block;
-
-
-width: 280px;
-height: 200px;
-
-object-fit: contain;
-
-
-}
-
-/* =====================================================
-FOOD CATEGORY SECTION
-===================================================== */
-
-#menu {
-width: 100%;
-min-height: 550px;
-
-padding: 70px 7%;
-
-background: white;
-
-
-}
-
-#menu h2 {
-text-align: center;
-
-
-font-size: 30px;
-color: #222;
-
-margin-bottom: 45px;
-}
-
-/* FOOD ITEMS */
-
-#food-categories {
-display: flex;
-justify-content: center;
-align-items: flex-start;
-
-
-gap: 40px;
-
-max-width: 1000px;
-margin: auto;
-
-overflow-x: auto;
-
-padding-bottom: 20px;
-
-}
-
-.food-item {
-min-width: 110px;
-text-align: center;
-
-cursor: pointer;
-
-transition: transform 0.2s ease;
-
-}
-
-.food-item:hover {
-transform: translateY(-6px);
-}
-
-.food-item img {
-width: 100px;
-height: 100px;
-
-object-fit: contain;
-
-}
-
-.food-item p {
-margin-top: 10px;
-
-font-size: 15px;
-font-weight: 600;
-
-color: #333;
-
-}
-
-/* =====================================================
-APP DOWNLOAD BANNER
-===================================================== */
-
-#app-banner {
-width: 100%;
-max-width: 1000px;
-margin: 70px auto 0;
-
-overflow: hidden;
-border-radius: 15px;
-}
-
-#app-banner img {
-display: block;
-width: 100%;
-height: auto;
-
-
-}
-
-/* =====================================================
-FOOTER
-===================================================== */
-
-#footer {
-width: 100%;
-
-display: grid;
-grid-template-columns: 1.5fr repeat(4, 1fr);
-
-gap: 50px;
-
-padding: 70px 7%;
-
-background: #f2f2f2;
-}
-
-/* FOOTER COLUMNS */
-
-.footer-column {
-display: flex;
-flex-direction: column;
-
-
-gap: 14px;
-}
-
-.footer-column h3 {
-margin-bottom: 8px;
-
-
-font-size: 16px;
-color: #222;
-
-}
-
-.footer-column a {
-color: #666;
-font-size: 14px;
-text-decoration: none;
-
-transition: color 0.2s;
-}
-
-.footer-column a:hover {
-color: #ff5200;
-}
-
-/* BRAND */
-
-#footer-logo {
-width: 120px;
-height: auto;
-
-
-margin-bottom: 10px;
-
-}
-
-.brand-column p {
-color: #777;
-font-size: 13px;
-}
-
-/* =====================================================
-TABLET
-===================================================== */
-
-@media (max-width: 900px) {
-
-#nav-container {
-    gap: 15px;
-    font-size: 14px;
-}
-
-#nav-container span {
-    display: none;
-}
-
-#hero-content {
-    padding-top: 80px;
-}
-
-#hero-content h1 {
-    font-size: 34px;
-}
-
-#veggies,
-#sushi {
-    width: 130px;
-}
-
-.service-card img {
-    width: 230px;
-}
-
-#footer {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-}
-
-/* =====================================================
-MOBILE
-===================================================== */
-
-@media (max-width: 600px) {
-
-#header {
-    min-height: 760px;
-}
-
-
-/* NAVIGATION */
-
-#header-top {
-    padding: 20px;
-}
-
-#logo {
-    width: 120px;
-}
-
-#app-button {
-    display: none;
-}
-
-#sign-button {
-    height: 42px;
-    padding: 0 18px;
-}
-
-
-/* DECORATIVE IMAGES */
-
-#veggies,
-#sushi {
-    width: 90px;
-    top: 170px;
-}
-
-
-/* HERO */
-
-#hero-content {
-    padding-top: 100px;
-}
-
-#hero-content h1 {
-    font-size: 27px;
-    line-height: 1.3;
-}
-
-
-/* SEARCH */
-
-#search-container {
-    flex-direction: column;
-
-    width: 85%;
-
-    gap: 10px;
-}
-
-.search-box:first-child,
-.search-box:last-child {
-    width: 100%;
-    flex: none;
-}
-
-
-/* SERVICE CARDS */
-
-#service-cards {
-    flex-direction: column;
-
-    align-items: center;
-
-    margin-top: 50px;
-
-    gap: 5px;
-}
-
-.service-card img {
-    width: 230px;
-    height: 150px;
-}
-
-
-/* MENU */
-
-#menu {
-    padding: 50px 20px;
-}
-
-#menu h2 {
-    font-size: 24px;
-}
-
-#food-categories {
-    justify-content: flex-start;
-
-    gap: 25px;
-}
-
-
-/* FOOTER */
-
-#footer {
-    grid-template-columns: 1fr 1fr;
-
-    gap: 35px;
-
-    padding: 50px 25px;
-}
-
-.brand-column {
-    grid-column: 1 / -1;
-}
-
-}
-
-/* =====================================================
-SMALL MOBILE
-===================================================== */
-
-@media (max-width: 400px) {
-
-#hero-content h1 {
-    font-size: 24px;
-}
-
-#veggies,
-#sushi {
-    width: 70px;
-}
-
-#service-cards {
-    margin-top: 40px;
-}
-
-.service-card img {
-    width: 200px;
-    height: 130px;
-}
-
-#footer {
-    grid-template-columns: 1fr;
-}
-
-.brand-column {
-    grid-column: auto;
-}
-
-}
-
-
-
-
-
-
-/* ================================================================================================================================================================================================================================================ */
-/* 
-SWIGGY
+/* SWIGGY */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-================= HEADER =================
+/* ================= HEADER ================= */
 
 #header {
     background-color: hsl(18, 95%, 50%);
     width: 100vw;
-    height: 90vh;
+    height: 110vh;
     position: relative; 
     overflow: hidden;
 }
 
 
-================= TOP SECTION =================
+/* ================= TOP SECTION ================= */
 
 #header-top {
-    padding-top:40px;
+    padding-top:30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 
-================= LOGO =================
+/* ================= LOGO ================= */
 
 #logo {
-    height: 55px;
+    height: 50px;
     width: 160px;
-    margin-left: 30px;
+    margin-left: 150px;
 }
 
 
-================= NAVIGATION =================
+/* ================= NAVIGATION ================= */
 #container {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-right: 30px;
+    margin-right: 150px;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 
-================= APP BUTTON =================
+/* ================= APP BUTTON ================= */
 #App {
     color: white;
     background-color: transparent;
@@ -709,7 +62,7 @@ SWIGGY
     border-radius: 10px;
 }
 
-================= SIGN IN =================
+/* ================= SIGN IN ================= */
 #Sign {
     color: white;
     background-color: black;
@@ -721,47 +74,49 @@ SWIGGY
 }
 
 
-================= VEGGIES =================
+/* ================= VEGGIES ================= */
 
 #veggies {
     position: absolute;
-    width: 150px;
-    left: 0;
-    top: 150px;
+    width: 250px;
+    top: 100px;
 }
 
-================= SUSHI =================
+/* ================= SUSHI ================= */
 #sushi {
     position: absolute;
-    width: 150px;
+    width: 250px;
     right: 0;
-    top: 150px;
+    top: 100px;
 }
 
 
-================= HEADING =================
+/* ================= HEADING ================= */
 h1 {
     color: white;
     text-align: center;
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 50%;
     transform: translateX(-50%);
-    width: 700px;
-    font-size: 35px;
+    width: 850px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
-================= SEARCH BOXES =================
+/* ================= SEARCH BOXES ================= */
 
 #search-container {
     position: absolute;
-    top: 250px;
+    top: 330px;
     left: 50%;
     transform: translateX(-50%);
-    
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
-    width: 700px;
+    width: 800px;
 }
 
 #location-input,
@@ -770,7 +125,7 @@ h1 {
     border: none;
     border-radius: 10px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 15px;
     outline: none;
 }
 
@@ -779,38 +134,257 @@ h1 {
 }
 
 #search-input {
-    width: 405px;
+    width: 505px;
 }
 
 
-================ FOOD DELIVERY/INSTAMART/DINEOUT ===================
-#images3{
-    padding-top: 280px;
+/* =========================================================        
+            FOOD DELIVERY/INSTAMART/DINEOUT
+   ========================================================= */
+
+#images3 {
+    padding-top: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+
 }
 
-
-
-
-
-
-
-
-
-
-================= MENU =================
+#images3 > a > .im3 {
+    width: 380px;
+    height: auto;
+}
+/* ================= MENU ================= */
 #menu {
-    background-color: white;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
-    padding: 100px;
+    background-color: white;
+    margin: 10vw;
+    
 }
 
-================= FOOTER =================
+#banneer{
+    width:100%;
+    height:auto;
+}
+
+
+/* =======================================================================
+                        first scrole
+   =======================================================================
+*/
+
+/* =========================================
+   OPTIONS SECTION
+========================================= */
+
+#options-section {
+    width: 100%;
+    padding: 40px 60px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HIDE RADIO BUTTONS
+========================================= */
+
+#options-section > input {
+    display: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+#options-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+
+#options-header h2 {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #202124;
+}
+
+
+/* =========================================
+   ARROWS CONTAINER
+========================================= */
+
+#s1arrows {
+    display: flex;
+    gap: 15px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   ALL ARROWS HIDDEN
+========================================= */
+
+#s1arrows .arrow {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #e5e5e5;
+
+    color: #222;
+
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+}
+
+
+/* Arrow hover */
+
+#s1arrows .arrow:hover {
+    background-color: #d5d5d5;
+}
+
+
+/* =========================================
+   SLIDE 1
+========================================= */
+
+#food1:checked ~ #options-header
+#s1arrows .slide1-left,
+
+#food1:checked ~ #options-header
+#s1arrows .slide1-right {
+
+    display: flex;
+}
+
+
+/* =========================================
+   SLIDE 2
+========================================= */
+
+#food2:checked ~ #options-header
+#s1arrows .slide2-left,
+
+#food2:checked ~ #options-header
+#s1arrows .slide2-right {
+
+    display: flex;
+}
+
+
+/* =========================================
+   SLIDE 3
+========================================= */
+
+#food3:checked ~ #options-header
+#s1arrows .slide3-left,
+
+#food3:checked ~ #options-header
+#s1arrows .slide3-right {
+
+    display: flex;
+}
+
+
+/* =========================================
+   IMAGE WINDOW
+========================================= */
+
+#scroll1 {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   IMAGE TRACK
+========================================= */
+
+#scroll1-track {
+    display: flex;
+
+    gap: 25px;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* =========================================
+   FOOD IMAGES
+========================================= */
+
+.s1 {
+    width: 190px;
+    height: 190px;
+
+    object-fit: contain;
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   SLIDE 1
+========================================= */
+
+#food1:checked ~ #scroll1 #scroll1-track {
+
+    transform: translateX(0);
+
+}
+
+
+/* =========================================
+   SLIDE 2
+========================================= */
+
+#food2:checked ~ #scroll1 #scroll1-track {
+
+    transform: translateX(-645px);
+
+}
+
+
+/* =========================================
+   SLIDE 3
+========================================= */
+
+#food3:checked ~ #scroll1 #scroll1-track {
+
+    transform: translateX(-1290px);
+
+}
+
+/* ================= FOOTER ================= */
 #footer {
     background-color: rgb(236, 236, 236);
-    min-height: 30vh;
+    min-height: 80vh;
     width: 100%;
     padding: 50px;
 }
@@ -835,4 +409,4 @@ h1 {
 #footer h6 {
     color: #666;
     font-size: 13px;
-} */
+} 

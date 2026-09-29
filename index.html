@@ -1,339 +1,29 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiggy Clone</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" type="image" href="https://static.vecteezy.com/system/resources/previews/050/816/833/non_2x/swiggy-transparent-icon-free-png.png" width:80px>
-</head>
-
-<body>
-<!-- ================= HEADER ================= -->
-<header id="header">
-
-    <!-- TOP NAVIGATION -->
-    <nav id="header-top">
-
-        <a href="https://www.swiggy.com/" target="_blank" class="logo-link">
-            <img
-                id="logo"
-                src="./images/swiggy_logo_white.avif"
-                alt="Swiggy"
-            >
-        </a>
-
-        <div id="nav-container">
-            <span>Swiggy Corporate</span>
-            <span>Partner with us</span>
-
-            <button id="app-button">
-                Get the App
-            </button>
-
-            <button id="sign-button">
-                Sign in
-            </button>
-        </div>
-
-    </nav>
-
-
-    <!-- LEFT IMAGE -->
-    <img
-        id="veggies"
-        src="./images/Veggies_new.avif"
-        alt="Vegetables"
-    >
-
-
-    <!-- MAIN HERO CONTENT -->
-    <section id="hero-content">
-
-        <h1>
-            Order food & groceries. Discover
-            <br>
-            best restaurants. Swiggy it!
-        </h1>
-
-        <!-- SEARCH -->
-        <div id="search-container">
-
-            <div class="search-box">
-                <input
-                    type="text"
-                    placeholder="Enter your delivery location"
-                >
-            </div>
-
-            <div class="search-box">
-                <span class="search-icon"></span>
-                <input
-                    type="text"
-                    placeholder="Search for restaurant, item or more"
-                >
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- DECORATIVE RIGHT IMAGE -->
-    <img
-        id="sushi"
-        src="./images/Sushi_replace.avif"
-        alt="Sushi"
-    >
-
-
-    <!-- MAIN SERVICE CARDS -->
-    <div id="service-cards">
-
-        <a
-            href="https://www.swiggy.com/restaurants"
-            target="_blank"
-            class="service-card"
-        >
-            <img
-                src="./images/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.avif"
-                alt="Food Delivery"
-            >
-        </a>
-
-        <a
-            href="https://www.swiggy.com/instamart"
-            target="_blank"
-            class="service-card"
-        >
-            <img
-                src="./images/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.avif"
-                alt="Instamart"
-            >
-        </a>
-
-        <a
-            href="https://www.swiggy.com/dineout"
-            target="_blank"
-            class="service-card"
-        >
-            <img
-                src="./images/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.avif"
-                alt="Dineout"
-            >
-        </a>
-
-    </div>
-
-</header>
-
-
-<!-- ================= FOOD CATEGORY SECTION ================= -->
-<main id="menu">
-
-    <h2>
-        What's on your mind?
-    </h2>
-    <h4>
-        Order our best food options
-    </h4>
-    <div id="food-categories">
-        
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Idli.png"
-                alt="Idli"
-            >
-            <p>Idli</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Vada.png"
-                alt="Vada"
-            >
-            <p>Vada</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png"
-                alt="Biryani"
-            >
-            <p>Biryani</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png"
-                alt="Cake"
-            >
-            <p>Cake</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Khichdi.png"
-                alt="Khichdi"
-            >
-            <p>Khichdi</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Upma.png"
-                alt="Upma"
-            >
-            <p>Upma</p>
-        </div>
-
-    </div>
-    <br>
-    <br>
-    <h4>
-        Shop groceries on Instamart
-    </h4>
-    <div id="food-categories">
-        
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Idli.png"
-                alt="Idli"
-            >
-            <p>Idli</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Vada.png"
-                alt="Vada"
-            >
-            <p>Vada</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png"
-                alt="Biryani"
-            >
-            <p>Biryani</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png"
-                alt="Cake"
-            >
-            <p>Cake</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Khichdi.png"
-                alt="Khichdi"
-            >
-            <p>Khichdi</p>
-        </div>
-
-        <div class="food-item">
-            <img
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Upma.png"
-                alt="Upma"
-            >
-            <p>Upma</p>
-        </div>
-
-    <!-- APP DOWNLOAD BANNER -->
-    <div id="app-banner">
-        <img
-            src="./images/App_download_banner.avif"
-            alt="Download Swiggy App"
-        >
-    </div>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-<footer id="footer">
-
-    <div class="footer-column brand-column">
-        <img
-            src="./images/footer logo.svg"
-            alt="Swiggy"
-            id="footer-logo"
-        >
-
-        <p>© 2026 Swiggy Limited</p>
-    </div>
-
-
-    <div class="footer-column">
-        <h3>Company</h3>
-        <a href="#">About Us</a>
-        <a href="#">Careers</a>
-        <a href="#">Team</a>
-        <a href="#">Swiggy One</a>
-    </div>
-
-
-    <div class="footer-column">
-        <h3>Contact</h3>
-        <a href="#">Help & Support</a>
-        <a href="#">Partner With Us</a>
-        <a href="#">Ride With Us</a>
-    </div>
-
-
-    <div class="footer-column">
-        <h3>Legal</h3>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Cookie Policy</a>
-        <a href="#">Privacy Policy</a>
-    </div>
-
-
-    <div class="footer-column">
-        <h3>Life at Swiggy</h3>
-        <a href="#">Explore Careers</a>
-        <a href="#">Swiggy Stories</a>
-    </div>
-
-</footer>
-```
-
-</body>
-</html>
-
-
-
-
-
-
-
-<!-- ================================================================================================================================================================================================================================================ -->
-<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swiggy</title>
     <link rel="stylesheet" href="./index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="header">
       
-        TOP NAVIGATION
+<!-- TOP NAVIGATION -->
+
         <div id="header-top">
-            <a href="https://www.swiggy.com/">
+            <a href="https://www.swiggy.com/" target="_blank">
                 <img id="logo"
                      src="./images/swiggy_logo_white.avif"
                      alt="Swiggy">
             </a>
-            NAVIGATION LIST
+<!-- NAVIGATION LIST -->
 
             <div id="container">
                 <span>Swiggy Corporate</span>
@@ -343,79 +33,591 @@
             </div>
         </div>
 
-        LEFT IMAGE
+<!-- LEFT IMAGE -->
          
         <img id="veggies"
              src="./images/Veggies_new.avif"
              alt="veggies image">
 
-        MAIN HEADING
+<!-- MAIN HEADING -->
         <h1>
             Order food & groceries. Discover <br>
             best restaurant. Swiggy it!
         </h1>
 
-        RIGHT IMAGE
+<!-- RIGHT IMAGE -->
         <img id="sushi"
              src="./images/Sushi_replace.avif"
              alt="sushi image">
 
-        SEARCH BOXES/
+<!-- SEARCH BOXES/ -->
         <div id="search-container">
             <input id="location-input"
                 type="text"
-                placeholder="📍 Enter your delivery location">
+                placeholder="Enter your delivery location">
 
             <input id="search-input"
                 type="text"
                 placeholder="Search for restaurant, item or more">
         </div>
 
-        HEADER BOTTOM 3 IMAGES
+<!-- HEADER BOTTOM 3 IMAGES -->
        
         <div id="images3">
 
 
-             FOOD DELIVERY
+<!-- FOOD DELIVERY -->
+
             <a href="https://www.swiggy.com/restaurants" target="_blank">
-                <img src="./images/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.avif" alt="FOOD DELIVERY" height="200px">
+                <img class="im3" src="./images/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.avif" alt="FOOD DELIVERY">
             </a>
-              INSTAMART
-            <a href="https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1" target="_blank">
-                <img src="./images/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.avif" alt="INSTAMART" height="200px">
-            </a>
-             DINEOUT
-            <a href="https://www.swiggy.com/dineout" target="_blank">
-                <img src="./images/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.avif" alt="DINEOUT" height="200px">
-            </a>
-        </div>
-    </div>
-
-        MIDDLE BLOCK
-    <div id="menu">
-        MENT ITEMS/
-        <div>
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Idli.png" width="100px">
-
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Idli.png" width="100px">
-
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Vada.png" width="100px">
-
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png" width="100px">
-
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png" width="100px">
+<!-- INSTAMART -->
             
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Khichdi.png" width="100px">
+            <a href="https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1" target="_blank">
+                <img class="im3" src="./images/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.avif" alt="INSTAMART">
+            </a>
+<!-- DINEOUT -->
+ 
+            <a href="https://www.swiggy.com/dineout" target="_blank">
+                <img class="im3" src="./images/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.avif" alt="DINEOUT">
+            </a>
+        </div>
+    </div>
 
-            <img class="sc-bYEtBu iluNTW sc-hgAtgP fuTbFd" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Upma.png" width="100px">
+<!--============================================================================                                MIDDLE BLOCK =============================================================================-->
+<div id="menu">
+                           <!-- MENT ITEMS -->
+        <!--====================================================================
+                              first scroling
+        ========================================================================-->
+
+    <div id="options-section">
+
+    <!-- ================= RADIO CONTROLS ================= -->
+
+    <input type="radio" name="food-slide" id="food1" checked>
+    <input type="radio" name="food-slide" id="food2">
+    <input type="radio" name="food-slide" id="food3">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <div id="options-header">
+
+        <h2>Order our best food options</h2>
+
+        <div id="s1arrows">
+
+            <!-- Slide 1 -->
+            <label for="food1" class="arrow slide1-left">←</label>
+            <label for="food2" class="arrow slide1-right">→</label>
+
+            <!-- Slide 2 -->
+            <label for="food1" class="arrow slide2-left">←</label>
+            <label for="food3" class="arrow slide2-right">→</label>
+
+            <!-- Slide 3 -->
+            <label for="food2" class="arrow slide3-left">←</label>
+            <label for="food3" class="arrow slide3-right">→</label>
 
         </div>
-        <br><br>
-        <br><br>
 
-        <img src="./images/App_download_banner.avif" alt="App_download_banner" height="80px" width="100%">       
     </div>
-    ============================== FOOTER BLOCK =======================
+
+
+    <!-- ================= IMAGE SLIDER ================= -->
+
+    <div id="scroll1">
+
+        <div id="scroll1-track">
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/biryani.png"
+                     alt="Biryani">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/pizza.png"
+                     alt="Pizza">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/burger.png"
+                     alt="Burger">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/desserts.png"
+                     alt="Desserts">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/cake.png"
+                     alt="Cake">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/idli.png"
+                     alt="Idli">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/juice.png"
+                     alt="Juice">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/momo.png"
+                     alt="Momo">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/pastry.png"
+                     alt="Pastry">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images/food_images/samosa.png"
+                     alt="Samosa">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/chinese.png"
+                     alt="Chinese">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/dosa.png"
+                     alt="Dosa">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/noodles.png"
+                     alt="Noodles">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/pasta.png"
+                     alt="Pasta">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/pastry.png"
+                     alt="Pastry">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/pav_bhaji.png"
+                     alt="Pav Bhaji">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/rolls.png"
+                     alt="Rolls">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/salad.png"
+                     alt="Salad">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/shake.png"
+                     alt="Shake">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/shawarma.png"
+                     alt="Shawarma">
+            </a>
+
+            <a href="#">
+                <img class="s1"
+                     src="./images/food_images_2/food_images_2/south_indian.png"
+                     alt="South Indian">
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!--====================================================================
+                              second scroling
+    ========================================================================                                                                            -->
+    <div id="second-section">
+
+    <!-- ================= RADIO CONTROLS ================= -->
+
+    <input type="radio" name="food-slide" id="food1" checked>
+    <input type="radio" name="food-slide" id="food2">
+    <input type="radio" name="food-slide" id="food3">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <div id="second-header">
+
+        <h2>Order our best food options</h2>
+
+        <div id="s2arrows">
+
+            <!-- Slide 1 -->
+            <label for="food1" class="arrow slide1-left">←</label>
+            <label for="food2" class="arrow slide1-right">→</label>
+
+            <!-- Slide 2 -->
+            <label for="food1" class="arrow slide2-left">←</label>
+            <label for="food3" class="arrow slide2-right">→</label>
+
+            <!-- Slide 3 -->
+            <label for="food2" class="arrow slide3-left">←</label>
+            <label for="food3" class="arrow slide3-right">→</label>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= IMAGE SLIDER ================= -->
+
+    <div id="scroll2">
+
+        <div id="scroll2-track">
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/biryani.png"
+                     alt="Biryani">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/pizza.png"
+                     alt="Pizza">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/burger.png"
+                     alt="Burger">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/desserts.png"
+                     alt="Desserts">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/cake.png"
+                     alt="Cake">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/idli.png"
+                     alt="Idli">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/juice.png"
+                     alt="Juice">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/momo.png"
+                     alt="Momo">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/pastry.png"
+                     alt="Pastry">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images/food_images/samosa.png"
+                     alt="Samosa">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/chinese.png"
+                     alt="Chinese">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/dosa.png"
+                     alt="Dosa">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/noodles.png"
+                     alt="Noodles">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/pasta.png"
+                     alt="Pasta">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/pastry.png"
+                     alt="Pastry">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/pav_bhaji.png"
+                     alt="Pav Bhaji">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/rolls.png"
+                     alt="Rolls">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/salad.png"
+                     alt="Salad">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/shake.png"
+                     alt="Shake">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/shawarma.png"
+                     alt="Shawarma">
+            </a>
+
+            <a href="#">
+                <img class="s2"
+                     src="./images/food_images_2/food_images_2/south_indian.png"
+                     alt="South Indian">
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!--====================================================================
+                              third scroling
+    ====================================================================  -->
+    <div id="third-section">
+
+        <!-- ================= RADIO CONTROLS ================= -->
+
+        <input type="radio" name="food-slide" id="food1" checked>
+        <input type="radio" name="food-slide" id="food2">
+        <input type="radio" name="food-slide" id="food3">
+
+
+        <!-- ================= HEADER ================= -->
+
+        <div id="third-header">
+
+            <h2>Order our best food options</h2>
+
+        <div id="s3arrows">
+
+            <!-- Slide 1 -->
+            <label for="food1" class="arrow slide1-left">←</label>
+            <label for="food2" class="arrow slide1-right">→</label>
+
+            <!-- Slide 2 -->
+            <label for="food1" class="arrow slide2-left">←</label>
+            <label for="food3" class="arrow slide2-right">→</label>
+
+            <!-- Slide 3 -->
+            <label for="food2" class="arrow slide3-left">←</label>
+            <label for="food3" class="arrow slide3-right">→</label>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= IMAGE SLIDER ================= -->
+
+    <div id="scroll3">
+
+        <div id="scroll3-track">
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/biryani.png"
+                     alt="Biryani">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/pizza.png"
+                     alt="Pizza">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/burger.png"
+                     alt="Burger">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/desserts.png"
+                     alt="Desserts">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/cake.png"
+                     alt="Cake">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/idli.png"
+                     alt="Idli">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/juice.png"
+                     alt="Juice">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/momo.png"
+                     alt="Momo">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/pastry.png"
+                     alt="Pastry">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images/food_images/samosa.png"
+                     alt="Samosa">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/chinese.png"
+                     alt="Chinese">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/dosa.png"
+                     alt="Dosa">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/noodles.png"
+                     alt="Noodles">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/pasta.png"
+                     alt="Pasta">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/pastry.png"
+                     alt="Pastry">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/pav_bhaji.png"
+                     alt="Pav Bhaji">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/rolls.png"
+                     alt="Rolls">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/salad.png"
+                     alt="Salad">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/shake.png"
+                     alt="Shake">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/shawarma.png"
+                     alt="Shawarma">
+            </a>
+
+            <a href="#">
+                <img class="s3"
+                     src="./images/food_images_2/food_images_2/south_indian.png"
+                     alt="South Indian">
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+    
+
+    <img id="banneer" src="./images/App_download_banner.avif" alt="App_download_banner" height="80px" width="100%">       
+    
+</div>
+<!-- ================================================================================                                FOOTER BLOCK 
+ =========================================================================== -->
     <div id="footer">
     <table>
         <tr>
@@ -435,5 +637,7 @@
     </div>
 
 
+
+    
     </div>
-</body> -->
+</body>
